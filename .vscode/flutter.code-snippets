@@ -1,0 +1,47 @@
+{
+//import
+	"import flutter": {
+		"prefix": "import flutter",
+		"scope": "dart",
+		"body": [
+			"import 'package:flutter/material.dart';"
+		]
+	},
+	"import async": {
+		"prefix": "import async",
+		"scope": "dart",
+		"body": [
+			"import 'import 'dart:async';"
+		]
+	},
+
+//main
+	"main": {
+		"prefix": "main",
+		"scope": "dart",
+		"body": [
+			"void main() => runApp(const ProviderScope(child: MyApp()));"
+		]
+	},
+
+//MyApp
+"my_app": {
+	"prefix": "my_app",
+	"scope": "dart",
+	"body": [
+		"class MyApp extends StatelessWidget {"
+		"	const MyApp({super.key});"
+		""
+		"	@override"
+		"	Widget build(BuildContext context) {"
+		"		return const MaterialApp("
+		"			home: ,"
+		"		);"
+		"	}"
+		"}"
+	]
+},
+
+}
+
+
