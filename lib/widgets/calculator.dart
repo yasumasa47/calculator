@@ -1,3 +1,4 @@
+import 'package:calculator/widgets/detail/double_buttom.dart';
 import 'package:calculator/widgets/detail/single_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -20,6 +21,7 @@ class Calculator extends ConsumerWidget {
             SingleButton(backColor: Colors.amber, text: '7'),
             SingleButton(backColor: Colors.amber, text: '8'),
             SingleButton(backColor: Colors.amber, text: '9'),
+            DoubleButton(backColor: Colors.blue, text: '0')
           ],
         ),
       ),
