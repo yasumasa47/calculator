@@ -13,8 +13,13 @@ class SingleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: backColor,
-      chird:Text(text),
+      child: Text(text),
+      height: 50,
+      width: 50,
+      decoration: BoxDecoration(
+        color: backColor,
+        shape: BoxShape.circle,
+      ),
     );
   }
 }
