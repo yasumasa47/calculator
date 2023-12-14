@@ -1,4 +1,5 @@
 import 'package:calculator/widgets/detail/double_buttom.dart';
+import 'package:calculator/widgets/detail/result.dart';
 import 'package:calculator/widgets/detail/single_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +13,7 @@ class Calculator extends ConsumerWidget {
       child: Center(
         child: Column(
           children: [
+            Result(text: 'test'),
             SingleButton(backColor: Colors.amber, text: '1'),
             SingleButton(backColor: Colors.amber, text: '2'),
             SingleButton(backColor: Colors.amber, text: '3'),
