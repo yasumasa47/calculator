@@ -10,20 +10,139 @@ class Calculator extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
-      child: Center(
+      color: Colors.pink,
+      padding: EdgeInsets.symmetric(vertical: 100),
+      child: const Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Result(text: 'test'),
-            SingleButton(backColor: Colors.amber, text: '1'),
-            SingleButton(backColor: Colors.amber, text: '2'),
-            SingleButton(backColor: Colors.amber, text: '3'),
-            SingleButton(backColor: Colors.amber, text: '4'),
-            SingleButton(backColor: Colors.amber, text: '5'),
-            SingleButton(backColor: Colors.amber, text: '6'),
-            SingleButton(backColor: Colors.amber, text: '7'),
-            SingleButton(backColor: Colors.amber, text: '8'),
-            SingleButton(backColor: Colors.amber, text: '9'),
-            DoubleButton(backColor: Colors.blue, text: '0')
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '7',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '8',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '7',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '8',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '7',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '8',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '7',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '8',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '9',
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                DoubleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.blue,
+                  text: '0',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '7',
+                ),
+                SingleButton(
+                  buttonColor: Colors.black,
+                  backColor: Colors.amber,
+                  text: '8',
+                ),
+              ],
+            ),
           ],
         ),
       ),
