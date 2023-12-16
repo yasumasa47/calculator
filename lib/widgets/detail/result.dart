@@ -12,9 +12,9 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Text(text),
-      height: 80,
-      width: 200,
-      color: Colors.black26,
+      height: 100,
+      width: 500,
+      color: Colors.amberAccent,
     );
   }
 }

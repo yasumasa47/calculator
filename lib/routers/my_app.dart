@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Calculator"),
+          backgroundColor: Colors.black87,
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,

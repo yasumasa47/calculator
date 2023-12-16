@@ -15,8 +15,8 @@ class DoubleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 180,
-      height: 80,
+      width: 200,
+      height: 100,
       child: ElevatedButton(
         style:ElevatedButton.styleFrom(
           backgroundColor: backColor

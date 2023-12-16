@@ -10,11 +10,10 @@ class Calculator extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
-      color: Colors.pink,
-      padding: EdgeInsets.symmetric(vertical: 100),
+      color: Colors.black87,
       child: const Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Result(text: 'test'),
