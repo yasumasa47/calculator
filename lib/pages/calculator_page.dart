@@ -1,4 +1,4 @@
-import 'package:calculator/widgets/calculator.dart';
+import 'package:calculator/widgets/calculator_widget.dart';
 import 'package:flutter/material.dart';
 
 class CalculatorPage extends StatelessWidget {

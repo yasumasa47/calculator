@@ -1,3 +1,4 @@
+import 'package:calculator/models/notifiers/calculator.dart';
 import 'package:calculator/widgets/values/colors.dart';
 import 'package:calculator/widgets/detail/result.dart';
 import 'package:calculator/widgets/detail/single_button.dart';
@@ -9,6 +10,8 @@ class Calculator extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final result = ref.watch(calculatorNotifierProvider);
+
     return Align(
       child: Container(
         height: 700,
@@ -17,7 +20,7 @@ class Calculator extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Result(text: 'test'),
+              Result(text: "$result"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -27,24 +30,44 @@ class Calculator extends ConsumerWidget {
                     backColor: AppColors().gray1,
                     text: 'AC',
                     fontSize: 30,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.AC();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.black,
                     backColor: AppColors().gray1,
                     text: '+/-',
                     fontSize: 30,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.black,
                     backColor: AppColors().gray1,
                     text: '%',
                     fontSize: 35,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().orange,
                     text: '÷',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                 ],
               ),
@@ -57,24 +80,44 @@ class Calculator extends ConsumerWidget {
                     backColor: AppColors().gray2,
                     text: '7',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '8',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '9',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().orange,
                     text: '×',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                 ],
               ),
@@ -87,24 +130,44 @@ class Calculator extends ConsumerWidget {
                     backColor: AppColors().gray2,
                     text: '4',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '5',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '6',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().orange,
                     text: '-',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                 ],
               ),
@@ -117,24 +180,44 @@ class Calculator extends ConsumerWidget {
                     backColor: AppColors().gray2,
                     text: '1',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '2',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '3',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().orange,
                     text: '+',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                 ],
               ),
@@ -147,24 +230,44 @@ class Calculator extends ConsumerWidget {
                     backColor: AppColors().gray2,
                     text: '0',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '00',
                     fontSize: 35,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().gray2,
                     text: '.',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                   SingleButton(
                     buttonColor: Colors.white,
                     backColor: AppColors().orange,
                     text: '=',
                     fontSize: 40,
+                    onTap: () {
+                      final notifire =
+                          ref.read(calculatorNotifierProvider.notifier);
+                      notifire.updateState();
+                    },
                   ),
                 ],
               ),

@@ -11,10 +11,17 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(text),
+      alignment: Alignment.bottomRight,
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 70,
+          color: Colors.white,
+        ),
+      ),
       height: 100,
       width: 500,
-      color: Colors.amberAccent,
     );
   }
 }
